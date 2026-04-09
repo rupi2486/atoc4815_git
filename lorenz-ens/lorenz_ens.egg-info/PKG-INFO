@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: lorenz-ens
+Version: 0.1.0
+Summary: Lorenz63 model integration and ensemble analysis
+Author-email: Russell Pipkin <rupi2486@colorado.edu>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.22
+Requires-Dist: matplotlib>=3.5
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+# lorenz_ens
+
+Lorenz63 ensemble predictability experiment for ATOC 4815/5815.
+
+## Usage
+
+Without installing:
+
+```bash
+python run.py
+```
+
+After packaging (lab exercise):
+
+```bash
+pip install -e .
+run-lorenz
+```
+
+Both generate `lorenz_ensemble_predictability.png`.
+
+## Files
+
+- `lorenz63.py` — Lorenz63 model class
+- `integrators.py` — Forward Euler integrator
+- `plotting.py` — Ensemble visualization
+- `run_lorenz_ensemble.py` — Driver script

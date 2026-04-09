@@ -1,0 +1,2 @@
+[console_scripts]
+run-lorenz = lorenz_project.run_lorenz_ensemble:main
